@@ -1,0 +1,24 @@
+*{padding: 0;margin: 0;}
+
+.formAlign{
+    background-color: rgb(205, 247, 205);
+    margin-left:53%;
+    margin-top:5%;
+    border: 1px solid rgb(139, 236, 139);
+    padding: 20px;
+    border-radius: 7px;
+    margin-right:22%;
+    margin-bottom:50px;
+}
+
+.labelColor{
+    color:black;
+}
+
+h6{
+    color:black;
+}
+
+h3{
+    color: black;
+}

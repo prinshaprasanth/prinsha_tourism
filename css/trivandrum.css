@@ -1,0 +1,38 @@
+.nav-link{
+    font-weight: bolder;
+}
+
+h4{
+    margin-left:37%;
+    margin-top:30px;
+}
+h3{
+    margin-left:40%;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.cardimage{
+    height:200px;
+}
+
+.intri{
+    width:580px;
+    height:430px;
+    margin-left: 27%;
+}
+
+.triv{
+    margin:50px;
+    text-align: justify;
+}
+
+.card{
+    float:right;
+    margin:10px;
+    margin-right:110px;
+}
