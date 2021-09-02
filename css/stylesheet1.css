@@ -1,0 +1,123 @@
+body{
+    background-color: beige;
+    background-size: cover;
+
+}
+
+
+.nav-link{
+    font-weight: bolder;
+}
+.foo{
+    background-color:rgb(236, 195, 222);
+    
+}
+
+h3{
+    margin: 15px 0 25px;
+    text-align: center;
+
+}
+
+input{
+    color :#022255 !important;
+
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus{
+    box-shadow: 0 0 5px rgba(246, 8, 118, .8);
+    border:1 px solid rgba(246, 8, 110, .8);
+}
+
+.container{
+    width:100%;
+    height:100%;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-horizontal{
+    margin-left: 450px;
+    margin-right: 50px;
+    width: 420px;
+    background-color: rgb(175, 166, 166);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .8);
+
+}
+
+.control-label{
+    text-align: left !important;
+    padding-bottom: 4px;
+    font-weight: bold;
+
+}
+
+.progress{
+    height: 3px !important;
+
+}
+
+.form-group{
+    height: 100%;
+    margin-bottom: 10px;
+
+}
+
+.show-pass{
+    position: absolute;
+    top: 5%;
+    right:8%;
+}
+
+.progress-bar-danger{
+    background-color: red;
+
+}
+
+.progress-bar-warning{
+    background-color: rgb(207, 207, 28);
+}
+
+.progress-bar-success{
+    background-color: green;
+}
+
+.login-btn{
+    width: 180px !important;
+    background-image: linear-gradient(to right, #f6086e, #ff133a) !important;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto 5px;
+    padding: 8px 0;
+}
+
+.login-btn:hover{
+    background-image: linear-gradient(to right, rgba(255,0,111,.8), rgba(247,2,4,.8)) !important;
+    color:white;
+}
+
+.fa-eye{
+    color:black;
+    cursor: pointer;
+
+}
+.far{
+    margin-top: 5px;
+}
+
+.ex-account p a{
+    color:rgba(255,0,111,.8);
+}
+.fa-circle{
+    font-size: 6px;
+}
+.fa-check{
+    color:green;
+}

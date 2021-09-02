@@ -41,7 +41,7 @@
             <a href="signup.html">Sign up</a>
         </div> -->
 
-        <form>
+        <form onsubmit="return firstValidate()">
             <div class="col-lg-4 formAlign">
                 <h3>User Login</h3><br> 
             
@@ -61,7 +61,7 @@
                   <h6>Need a new account ? <a href="signup.html">Sign up</a></h6>
               </div>
               <!-- Submit button -->
-              <button type="submit" class="btn btn-success btn-block mb-4">Log in</button>
+              <button type="submit" class="btn btn-success btn-block mb-4" id="submit">Log in</button>
             </div>
             </form>
 
@@ -79,6 +79,8 @@
   </footer>
 <!-- End of footer -->
     
+
+<!-- <script src="js/formValidations.js"></script> -->
 
 </body>
 </html>
