@@ -23,51 +23,36 @@
     </header>
     <!-- header ends -->
 
-    <!-- <form action="#" class="login">
-        <h2>User LogIn</h2><br>
-        <div class="credential">
-            <label>Username/Email</label><br>
-            <input type="text" placeholder="Enter username/email"><br><br>
-        </div>
-        <div class="credential">
-            <label>Password</label><br>
-            <input type="password:" placeholder="Enter your password"><br><br>    
-        </div>
-        <div>
-            <button id="loginbutton">Login</button>
-        </div><br><br>
-        <div class="newlogin">
-            <h5 id="help">Need an acocunt?</h5>
-            <a href="signup.html">Sign up</a>
-        </div> -->
+    
 
-        <form onsubmit="return firstValidate()">
-            <div class="col-lg-4 formAlign">
-                <h3>User Login</h3><br> 
+    
+
+        <form action="index.html" class="login" onsubmit="return val()" id = "loginform">
+            <h2 class="headings">User LogIn</h2><br>
             
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                <input type="email" id="form5Example2" class="form-control" placeholder="Enter your email id"/>
-                <label class="form-label labelColor" for="form5Example2">Enter your username</label>
-              </div>
-        
-              <!-- Password -->
-              <div class="form-outline mb-4">
-                <input type="password" id="form5Example1" class="form-control" placeholder="Enter your password"/>
-                <label class="form-label labelColor" for="form5Example1">Password</label>
-              </div>
+                <label>Username</label><br>
+                <input id = "username" type="text" placeholder="Enter username"><br><br>
             
-              <div class="form-outline mb-4">
-                  <h6>Need a new account ? <a href="signup.html">Sign up</a></h6>
-              </div>
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-success btn-block mb-4" id="submit">Log in</button>
+                <label>Password</label><br>
+                <input id = "pass" type="password" placeholder="Enter your password"><br><br>    
+           
+                <input type = "submit" id="loginbutton"></input>
+                <br><br>
+            <div class="newlogin">
+                <h5 class="headings">Need an acocunt? <a href="signup.html">Sign up</a></h5>
+                <label id ="loginError"></label>
+                <label id = "loginError2"></label>
             </div>
-            </form>
+        </form>
+  
+
+    
+        
+
+
 
               <!-- Footer -->
   <footer class="text-center text-white" style="background-color: #9ae2b1">  
-    <!-- Copyright -->
     <div class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)">
       © 2020 Copyright:
@@ -75,12 +60,11 @@
          >Kerala Tourism</a
         >
     </div>
-    <!-- Copyright -->
   </footer>
 <!-- End of footer -->
     
 
-<!-- <script src="js/formValidations.js"></script> -->
+<script src="js/login.js"></script>
 
 </body>
 </html>

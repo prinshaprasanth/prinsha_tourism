@@ -11,6 +11,11 @@ let repassword = document.getElementById('repassword');
 let label2 = document.getElementById('errorLabel2');
 let phonenumber = document.getElementById('phonenumber');
 let phone = document.getElementById('phone');
+let correctEmail = false;
+let correctP = false;
+let correctPC = false;
+let correctPh = false;
+
 
 
 email.addEventListener('keyup',function(){
@@ -26,12 +31,14 @@ function checkEmail(em){
         error.style.color = "green";
         error.style.fontSize = "small";
         error.style.fontWeight = "bold";
+        correctEmail = true;
     }
     else{
         error.innerHTML = "Invalid email address";
         error.style.color = "rgb(196, 28, 28)";
         error.style.fontWeight = "bold";
         error.style.fontSize = "small";
+        correctEmail = false;
     }
     
 
@@ -125,8 +132,10 @@ function checkStrength(password){
         passwordStrength.classList.remove('progress-bar-danger');
         passwordStrength.classList.add('progress-bar-success');
         passwordStrength.style = "width: 100%";
+        correctP = true;
     }
 }
+
 
 
 repassword.addEventListener('keyup',function(){
@@ -135,18 +144,21 @@ repassword.addEventListener('keyup',function(){
 })
 
 function checkPass(re){
-    if(re == password.value){
+    if((re == password.value) && re != ""){
         label2.innerHTML = "Password confirmed";
         label2.style.color = "green";
         label2.style.fontSize = "small";
         label2.style.color = "green";
         label2.style.fontWeight = "bold";
+        correctPC = true;
+        
     }
     else{
         label2.innerHTML = "Password not matching";
         label2.style.color = "rgb(196, 28, 28)";
         label2.style.fontSize = "small";
         label2.style.fontWeight = "bold";
+        correctPC = false;
     }
 
 }
@@ -165,12 +177,38 @@ function checkPhone(ph){
         phone.style.color = "green";
         phone.style.fontSize = "small";
         phone.style.fontWeight = "bold";
-        val = true;
+        correctPh = true;
     }
     else{
         phone.innerHTML = "Phone number invalid";
         phone.style.color = "rgb(196, 28, 28)";
+        correctPh = false;
     }
     
 }
- 
+
+
+
+
+function checkInputs(){
+    let blabel = document.getElementById('blabel');
+    if(correctEmail && correctP && correctPC && correctPh){
+        return true;
+        
+    }
+    else{
+        blabel.innerHTML = "You cannot submit <br> Fields are not filled properly";
+        blabel.style.color = "red";
+        blabel.style.fontSize = "small";
+        blabel.style.fontWeight = "bold";
+        return false;
+    }
+}
+
+
+
+    
+
+
+
+

@@ -48,21 +48,21 @@
 <!-- navbar ends -->
 
     <div class="container">
-        <form class="form-horizontal" id="validateForm">
+        <form action = "index.html" class="form-horizontal" id="validateForm" onsubmit="return checkInputs()" novalidate>
             <h3>Create a new account</h3>
             <fieldset>
-                <div class="form-group">
+                <!-- <div class="form-group"> -->
                     <label class="col-md-12 control-label">Email</label>
                     <div class="col-md-12">
                         <input type="email" id="email" name="textInput" class="form-control input-md" placeholder="Enter email" autocomplete="off">
                     </div>
-                    <label style="margin-left: 25px;" id="errorLabel"> </label>
-                </div>
+                    <label  class = "small" style="margin-left: 25px;" id="errorLabel"> </label>
+                <!-- </div> -->
 
-                <div class="form-group">
+                <!-- <div class="form-group"> -->
                     <label for="passwordInput" class="col-md-12 control-label">Password</label>
                     <div class="col-md-12">
-                        <input type="password" id="password" class="form-control input-md" name="passwordInput" placeholder="Enter pasword" required>
+                        <input type="password" id="password" class="form-control input-md" name="passwordInput" placeholder="Enter pasword">
                         <span class="show-pass" onclick="toggle()">
                             <i class="far fa-eye" onclick="myFunction(this)"></i>
                         </span>
@@ -96,37 +96,39 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                <!-- </div> -->
 
-                <div class="form-group">
+                <!-- <div class="form-group"> -->
                     <label class="col-md-12 control-label">Confirm Password</label>
                     <div class="col-md-12">
                         <input type="password" id="repassword" name="RePassword" class="form-control input-md" placeholder="Re-enter your password" autocomplete="off">
 
                     </div>
-                    <label style="margin-left: 25px;" id="errorLabel2"> </label>
-                </div>
+                    <label  class = "small" style="margin-left: 25px;" id="errorLabel2"> </label>
+                <!-- </div> -->
 
-                <div class="form-group">
+                <!-- <div class="form-group"> -->
                     <label class="col-md-12 control-label">Nationality</label>
                     <div class="col-md-12">
                         <input type="text" id="country" name="country" class="form-control input-md" placeholder="Enter your country name" autocomplete="off">
-                    </div>
-                </div>
+                    </div><br>
+                <!-- </div> -->
 
-                <div class="form-group">
+                <!-- <div class="form-group"> -->
                     <label class="col-md-12 control-label">Phone Number</label>
                     <div class="col-md-12">
                         <input type="text" id="phonenumber" name="phonenumber" class="form-control input-md" placeholder="Enter your phone number" autocomplete="off">
                     </div>
-                    <label style="margin-left: 25px;" id="phone"> </label>
-                </div>
+                    <label class = "small" style="margin-left: 25px;" id="phone"> </label>
+                <!-- </div> -->
 
-                <div class="form-group">
-                    <a href="#" class="btn login-btn btn-block">Submit</a>
-                </div>
+                <!-- <div class="form-group"> -->
+                    <button type = "submit" class = "btn login-btn btn-block" id = "button">Submit</button>
+                    <!-- <a href="#" class="btn login-btn btn-block" id = "button">Submit</a> -->
+                    <label id = "blabel"></label>
+                <!-- </div> -->
                 <div class="ex-account text-center">
-                    <p>Already have an account? Sign in <a href="#">here</a></p>
+                    <p>Already have an account? Login <a href="login.html">here</a></p>
                 </div>
             </fieldset>
         </form>
